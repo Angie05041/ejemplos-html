@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clínica Dental</title>
+<style>
+body {
+background-color: #f5f5f5; /* hexadecimal - 60% dominante */
+}
+header {
+background-image: linear-gradient(to right, #2b6cb0, #63b3ed); /* degradado */
+color: white; /* nombre */
+padding: 15px;
+}
+.servicios {
+background-color: rgb(235, 244, 255); /* RGB - 30% secundario */
+border: 2px solid hsl(212, 61%, 43%); /* HSL */
+padding: 10px;
+}
+.aviso {
+background-color: rgba(255, 0, 0, 0.1); /* RGBA - transparente */
+color: #c53030;
+padding: 10px;
+}
+button {
+background-color: #f6ad55; /* 10% acento */
+color: #333333;
+border: none;
+padding: 10px;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Clínica Dental</h1>
+</header>
+<section class="servicios">
+<h2 style="color: navy;">Nuestros servicios</h2> <!-- CSS en línea -->
+<ul>
+<li>Limpieza dental</li>
+<li>Ortodoncia</li>
+<li>Blanqueamiento</li>
+</ul>
+</section>
+<p class="aviso">Recuerda llegar 10 minutos antes de tu cita.</p>
+<button>Agendar cita</button>
+<p>
+<label for="color">Elige tu color favorito:</label>
+<input type="color" id="color" name="color" value="#2b6cb0">
+</p>
+</body>
+</html>

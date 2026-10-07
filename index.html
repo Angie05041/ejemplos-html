@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML - CSS PRIMEROS PASOS - Angie Suárez</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+    }
+    header {
+      background-image: linear-gradient(to right, #2b6cb0, #63b3ed);
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+    header p {
+      margin: 5px 0 0;
+    }
+    main {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 0 15px;
+    }
+    .tarjeta {
+      display: block;
+      background-color: white;
+      border-left: 6px solid #2b6cb0;
+      padding: 20px;
+      margin-bottom: 15px;
+      text-decoration: none;
+      color: #333333;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    .tarjeta:hover {
+      background-color: #ebf4ff;
+    }
+    .tarjeta h2 {
+      margin: 0 0 5px;
+      color: #2b6cb0;
+    }
+    .tarjeta p {
+      margin: 0;
+    }
+    footer {
+      text-align: center;
+      color: gray;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Ejemplos HTML</h1>
+  <p>Angie Fernanda Suárez Avendaño</p>
+  <p>Bootcamp - Desarrollo Web</p>
+</header>
+
+<main>
+  <a class="tarjeta" href="formularios.html">
+    <h2>1. Etiquetas de formulario</h2>
+    <p>Formulario de registro de pacientes con validaciones.</p>
+  </a>
+
+  <a class="tarjeta" href="bloques.html">
+    <h2>2. Etiquetas de bloque</h2>
+    <p>Estructura de una página con etiquetas semánticas.</p>
+  </a>
+
+  <a class="tarjeta" href="colores.html">
+    <h2>3. Colores en HTML</h2>
+    <p>Formas de insertar color: nombres, HEX, RGB, HSL y degradados.</p>
+  </a>
+</main>
+
+<footer>
+  <p>&copy; 2026 Angie Suárez</p>
+</footer>
+
+</body>
+</html>
