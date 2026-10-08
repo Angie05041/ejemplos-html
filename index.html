@@ -1,84 +1,83 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML - CSS PRIMEROS PASOS - Angie Suárez</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
-      margin: 0;
-    }
-    header {
-      background-image: linear-gradient(to right, #2b6cb0, #63b3ed);
-      color: white;
-      text-align: center;
-      padding: 30px;
-    }
-    header p {
-      margin: 5px 0 0;
-    }
-    main {
-      max-width: 800px;
-      margin: 30px auto;
-      padding: 0 15px;
-    }
-    .tarjeta {
-      display: block;
-      background-color: white;
-      border-left: 6px solid #2b6cb0;
-      padding: 20px;
-      margin-bottom: 15px;
-      text-decoration: none;
-      color: #333333;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    }
-    .tarjeta:hover {
-      background-color: #ebf4ff;
-    }
-    .tarjeta h2 {
-      margin: 0 0 5px;
-      color: #2b6cb0;
-    }
-    .tarjeta p {
-      margin: 0;
-    }
-    footer {
-      text-align: center;
-      color: gray;
-      padding: 20px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <h1 class="Logo"> Café Aroma</h1>  <!--titulo principal -->
+        <nav> <!--grupo de enlace del menu--> 
+            <a href="#">Inicio</a> <!--enlace de cada uno en este caso inicio y asi-->
+            <a href="#">Menú</a> 
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
+    <section class="hero"> <!-- una cajita grande de bienvenida -->
+  <div class="hero-texto"> <!-- agrupamos el titulo , el texto y el boton -->
+    <h2>El mejor café de la ciudad</h2> <!--h2 segundo titulo , como el siguiente despues de h1 en secuencia-->
+    <p>Granos colombianos recién tostados todos los días.</p> <!--texto normal-->
+    <a href="#" class="boton">Ver menú</a> <!--un enlace que vamos a decorar como boton-->
+  </div>
+</section>
 
-<header>
-  <h1>Ejemplos HTML</h1>
-  <p>Angie Fernanda Suárez Avendaño</p>
-  <p>Bootcamp - Desarrollo Web</p>
-</header>
+<main> <!-- contenido principal -->
+  <h2 class="titulo-seccion">Nuestro menú</h2> <!--titulo de la seccion -->
 
-<main>
-  <a class="tarjeta" href="formularios.html">
-    <h2>1. Etiquetas de formulario</h2>
-    <p>Formulario de registro de pacientes con validaciones.</p>
-  </a>
+  <div class="tarjetas"> <!--A la grande le dices cómo acomodar las tarjetas: "ponlas en fila
+    con espacio entre ellas y todo lo que quiera, de lo que esta dentro de este cajon grande y se desgloza en 
+    cajoncitos como se ve en tarjeta".-->
+    <div class="tarjeta"> <!--cajita dentro de la caja mas grande -->
+      <span class="icono">☕</span> <!--iconos-->
+      <h3>Espresso</h3>
+      <p>Intenso y aromático.</p>
+      <p class="precio">$5.000</p>
+    </div>
 
-  <a class="tarjeta" href="bloques.html">
-    <h2>2. Etiquetas de bloque</h2>
-    <p>Estructura de una página con etiquetas semánticas.</p>
-  </a>
+    <div class="tarjeta">
+      <span class="icono">🥛</span> <!--iconos-->
+      <h3>Capuchino</h3>
+      <p>Con espuma de leche.</p>
+      <p class="precio">$7.000</p>
+    </div>
 
-  <a class="tarjeta" href="colores.html">
-    <h2>3. Colores en HTML</h2>
-    <p>Formas de insertar color: nombres, HEX, RGB, HSL y degradados.</p>
-  </a>
-</main>
+    <div class="tarjeta">
+      <span class="icono">🍫</span><!--iconos-->
+      <h3>Mocaccino</h3>
+      <p>Café con chocolate.</p>
+      <p class="precio">$8.000</p>
+    </div>
 
-<footer>
-  <p>&copy; 2026 Angie Suárez</p>
+    <div class="tarjeta">
+      <span class="icono">🧁</span><!--iconos-->
+      <h3>Postres</h3>
+      <p>Hechos en casa.</p>
+      <p class="precio">$6.000</p>
+    </div>
+  </div>
+<!--Esto es la pie de pagina, por eso el footer-->
+  <footer> 
+  <div class="footer-columna">
+    <h4>Café Aroma</h4>
+    <p>Café colombiano desde 2026.</p>
+  </div>
+
+  <div class="footer-columna">
+    <h4>Horario</h4>
+    <p>Lun - Sáb: 7am - 8pm</p>
+  </div>
+
+  <div class="footer-columna">
+    <h4>Síguenos</h4>
+    <div class="redes">
+      <a href="#">📘</a> <!--iconos de redes, peor no le voy a poner-->
+      <a href="#">📸</a>
+      <a href="#">🐦</a>
+    </div>
+  </div>
 </footer>
-
+</main>
 </body>
 </html>

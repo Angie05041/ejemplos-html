@@ -1,0 +1,121 @@
+header {
+  display: flex; /* Pone el logo y el menu uno al lado del otro */
+  justify-content: space-between; /* logo a la izquierda, menú a la derecha */
+  align-items: center; /* los centra en vertical */
+  padding: 20px 40px; /* espacio por dentro (20px arriba/abajo, 40px a los lados)*/
+  background: linear-gradient(90deg, #f8bc9e, #f5bc7b); /* degradado de izquierda a derecha (90deg = horizontal)*/
+}
+
+nav {
+  display: flex; /* Pone los enlaces que tenga en fila, bonitos*/
+  gap: 25px; /* interlineado entre cada enlace, la distancia que van a tener uno con el otro en la fila*/
+}
+
+nav a {
+  color: white; /* color blanco */
+  text-decoration: none; /* quita el subrayado */
+  transition: transform 0.3s; /* crezca suave, no muy notorio */
+}
+
+nav a:hover {
+  transform: scale(1.2); /* la escala de como lo queremos a un 20% */
+}
+
+.hero { /* es un nombre que yo le doy y apunta directamente a esto en especifico */
+  display: flex; 
+  justify-content: center;
+  align-items: center; /* los 3 central el texto en el medio (horizontal  y vertical */
+  height: 400px; /* Altura de la cajita donde estamos apuntando */
+  background: linear-gradient(135deg, #3e2723, #a1887f); /* degradado en diagonal */
+}
+
+.hero-texto {
+  text-align: center; /* centramos la letras , recodar varios de estos, como final end y asi. */
+  color: white; /* color normal, siempre en ingles o podemos usar rgb creo que es jajaja hexa y asi, es mas 
+  facil pero los diseñadores te envian en hexa para proyectos de empresas con sus colores especificos*/
+}
+
+.boton { /* le vamos a dar como diseñito a el boton que ya pusimos alla por eso el punto */
+  display: inline-block; /* enlace para que el botoncito tenga el tamaño y el espacio como un boton*/
+  margin-top: 20px; /* separacion por fuera , arriba */
+  padding: 12px 30px; /* es el espacio donde voy a tener el texto o loq ue sea del boton */
+  background: #ffb74d;  
+  color: #3e2723;
+  text-decoration: none; 
+  border-radius: 25px; /* los bordes como quiero que esten de redondas */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* como vamos aplicar la sombra, entonces 0 lados, 4 hacia abjo 
+  y 10 de difuminado , y con un color negro al 30%*/
+  transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.boton:hover {
+  transform: translateY(-5px); /* efectivo de que se ilumina o sube como el colorcito 5 o lo que le pongamos en
+  pixeles*/
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* le pone sombrita para que parezca flotando*/
+}
+
+main {
+  padding: 50px 40px;
+  background: #fdf6ec; /* comoe sta en el main que es todo , entonces le da como un desgradado en la principal*/
+}
+
+.titulo-seccion {
+  text-align: center;
+  color: #3e2723;
+  margin-bottom: 30px; 
+}
+
+.tarjetas { /* apuntamos directamente a la caja mas grande div o contenedor */
+  display: grid; /* activa la cuadricula*/
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* define columnas, minmax lo que mide cada 
+  columna en minimo tato y maximo 1fr (una parte igual del espacio), repeat mete todas las columnas que 
+  quepan en pantalla grande salen 4 en fila; si achicas la ventana, bajan solas a 3, 2 o 1 */
+  gap: 25px; /* espacio entre las cajitas mas pequeñas que tengo */
+}
+
+.tarjeta { /* digamos que los hijitos del loque grande y como van a quedar por eso lo apunto directamente*/
+  background: white; 
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* recuerda sombra*/
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta:hover {
+  transform: translateY(-10px) scale(1.03); /* al pasar el mouse sube y crece un poquito al mismo tiempo */
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2); /* sombrita flotando*/
+}
+
+.icono { /* podemos tener clases dentro de clases para hacer estas cosas en especifico */
+  font-size: 40px; /* tamaños de los emojis*/
+}
+
+.precio {
+  font-weight: bold; /* negrita, letraaa*/
+  color: #6f4e37;
+}
+
+footer {
+  display: flex; /* pone las 3 columnas lado a lado */
+  justify-content: space-around; /* reparte el espacio , para que se vea como organizado*/
+  flex-wrap: wrap; /* si no cben, que las pase abajo*/
+  gap: 20px; /* interlineadooo*/
+  padding: 40px; /* lo de adentro de la caja */
+  background: linear-gradient(90deg, #3e2723, #6f4e37); /* el degradado */
+  color: white;
+}
+.redes {
+  display: flex; /* iconos en fila */
+  gap: 15px; /* interlineado*/
+}
+
+.redes a {
+  font-size: 25px; /* tamaño de la letra*/
+  text-decoration: none; /* los a, todos tienen un subrayado esto los quita*/
+  transition: transform 0.3s; /* para que se vea mas lindo*/
+}
+
+.redes a:hover {
+  transform: rotate(15deg) scale(1.3); 
+}
